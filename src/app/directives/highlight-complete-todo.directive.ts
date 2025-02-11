@@ -9,11 +9,11 @@ export class HighlightCompleteTodoDirective {
   
   stylesEffect = effect(() => {
     if(this.isCompleted()){
-      this.el.nativeElement.style.lineDecoration = "line-through";
+      this.el.nativeElement.style.textDecorationLine = "line-through";
       this.el.nativeElement.style.backgroundColor = "#d3f9d8";
       this.el.nativeElement.style.color = "#6c757d";
     }else{
-      this.el.nativeElement.style.lineDecoration = "none";
+      this.el.nativeElement.style.textDecorationLine = "none";
       this.el.nativeElement.style.backgroundColor = "#fff";
       this.el.nativeElement.style.color = "#000";
     }
